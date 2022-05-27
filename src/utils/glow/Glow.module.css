@@ -3,20 +3,30 @@
 }
 
 .item1, .item2  {
-    font-size: 20rem;
     text-transform: uppercase;
-    text-align: center;
+    /* text-align: center; */
     color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--accent6);
-    line-height: 1;
+    line-height: .8;
     position: relative;
     font-family: "Benguiat";
-    
 }
 
 .animation {
     animation: bounce 1.1s infinite ease-in-out;
+}
+
+.large {
+    font-size: 20rem;
+}
+
+.medium {
+    font-size: 13rem;
+}
+
+.small {
+    font-size: 10rem;
 }
 
 .item2 {
