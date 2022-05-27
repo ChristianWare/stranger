@@ -1,0 +1,87 @@
+.container {
+    height: 100vh;
+}
+
+.content {
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.line {
+    width: 100%;
+    height: 9px;
+    border: 2px solid var(--accent6);
+    position: relative;
+    top: 15px;
+}
+
+.line::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 9px;
+    border: 2px solid var(--accent6);
+    filter:blur(50px);
+}
+
+.heading2 {
+    display: block;
+}
+
+.heading2::after {
+    content: '';
+    position: absolute;
+    width: 15%;
+    height: 5px;
+    top: 20px;
+    left: 0;
+    border: 2px solid var(--accent6);
+}
+
+.heading2::before {
+    content: '';
+    position: absolute;
+    width: 16.5%;
+    height: 5px;
+    top: 20px;
+    right: -8px;
+    border: 2px solid var(--accent6);
+}
+
+.headingContainer {
+    display: block;
+    position: relative;
+}
+
+.heading, .heading2, .heading span  {
+    font-family: "Benguiat";
+    font-size: 10rem;
+    text-transform: uppercase;
+    text-align: center;
+    hyphens: auto;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--accent6);
+    position: relative;
+    line-height: 1;
+    letter-spacing: -10px;
+}
+
+.heading span  {
+    font-size: 13rem;
+    position: relative;
+    top: 20px;
+}
+
+.heading::before {
+    content: 'STRANGER THINGS';
+    position: absolute;
+    mix-blend-mode: difference;
+    filter:blur(50px);
+}
+
+
+
