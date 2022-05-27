@@ -1,9 +1,54 @@
-html,
-body {
-  padding: 0;
+:root {
+  --accent1: #0F0B23;
+  --accent1b: #191136;
+  --accent1c: #1F1645;
+  --accent2: #FAA91A;
+  --accent3: #777171;
+  --accent4: #ffffff;
+  --accent5: rgba(123, 8, 255, 0.8);
+  --accent6: #FF2842;
+  --accent7: #007E9E;
+}
+
+@font-face {
+  font-family: "Benguiat";
+  font-style: normal;
+  font-display: swap;
+  src: url("../public/fonts/Benguiat.ttf");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-display: swap;
+  src: url("../public/fonts/Lato.ttf");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+* {
+  font-family: "Lato",
+  sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  line-height: 150%;
+  /* scroll-behavior: smooth; */
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
 }
 
 a {
@@ -11,6 +56,65 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 3.2rem;
+}
+
+h5 {
+  font-size: 2.5rem;
+}
+
+h6 {
+  font-size: 2rem;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+p,
+input {
+  font-weight: 400;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--accent4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent1);
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  p {
+    font-size: 113.7%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+  p {
+    font-size: 125%;
+  }
 }
