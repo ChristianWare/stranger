@@ -38,7 +38,7 @@
   box-sizing: border-box;
   text-decoration: none;
   line-height: 150%;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
   overscroll-behavior: none;
   -webkit-tap-highlight-color: transparent;
 }

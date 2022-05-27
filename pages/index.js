@@ -1,10 +1,12 @@
-
+import Layout from '../src/comps/layout/Layout'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+    <>
+      <Layout>
+      <h1>Wadup</h1>
+      </Layout>
+    </>
   )
 }
