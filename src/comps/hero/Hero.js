@@ -1,4 +1,4 @@
-import DownArrow from "../../utils/downArrow/DownArrow";
+import Glow from "../../utils/glow/Glow";
 import styles from "./Hero.module.css";
 
 function Hero() {
@@ -13,7 +13,7 @@ function Hero() {
           <h2 className={styles.heading2}>Things</h2>
           <h3 className={styles.heading}>8 ball</h3>
         </div>
-        <DownArrow />
+        <Glow text='⌵' animation='animation' />
       </div>
     </section>
   );
