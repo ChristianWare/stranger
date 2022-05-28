@@ -4,7 +4,7 @@
 
 .item1, .item2  {
     text-transform: uppercase;
-    /* text-align: center; */
+    text-align: center;
     color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--accent6);
@@ -34,7 +34,7 @@
     top: 0;
     left: 0;
     mix-blend-mode: difference;
-    filter:blur(5px);
+    filter:blur(3px);
 }
 
 @keyframes bounce {

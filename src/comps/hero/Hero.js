@@ -15,7 +15,7 @@ function Hero() {
             <h2 className={styles.heading2}>Things</h2>
             <h2 className={styles.heading2a}>Things</h2>
           </div>
-          {/* <h3 className={styles.heading}>8 ball</h3> */}
+          <h3 className={styles.heading3}>8 ball</h3>
         </div>
         <Glow text='⌵' animation='animation' fz='large' />
       </div>

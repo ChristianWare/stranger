@@ -32,7 +32,7 @@
     position: relative;
 }
 
-.heading, .heading2, .heading2a, .s, .r  {
+.heading, .heading2, .heading2a, .s, .r, .heading3  {
     font-family: "Benguiat";
     font-size: 10rem;
     text-transform: uppercase;
@@ -120,5 +120,14 @@
     border: 2px solid var(--accent6);
     mix-blend-mode: difference;
     filter:blur(1px);
+}
+
+.heading3::before {
+    content: '8 Ball';
+    position: absolute;
+    top: 0px;
+    left: 140px;
+    mix-blend-mode: difference;
+    filter:blur(3px);
 }
 
