@@ -109,12 +109,3 @@ input {
     font-size: 113.7%;
   }
 }
-
-@media screen and (max-width: 480px) {
-  html {
-    font-size: 50%;
-  }
-  p {
-    font-size: 125%;
-  }
-}

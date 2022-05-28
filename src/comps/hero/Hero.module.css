@@ -37,13 +37,14 @@
     font-size: 10rem;
     text-transform: uppercase;
     text-align: center;
+    white-space: nowrap;
     hyphens: auto;
     color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--accent6);
     position: relative;
     line-height: 1;
-    letter-spacing: -10px;
+    letter-spacing: -10px; 
 }
 
 .s  {
@@ -80,7 +81,7 @@
     content: 'TRANGE';
     position: absolute;
     mix-blend-mode: difference;
-    filter:blur(5px);
+    filter:blur(3px);
     top: 27px;
     left: 90px;
 }
@@ -95,7 +96,7 @@
     left: 125px;
     position: absolute;
     mix-blend-mode: difference;
-    filter:blur(5px);
+    filter:blur(3px);
 }
 
 .heading2::before {
@@ -131,3 +132,19 @@
     filter:blur(3px);
 }
 
+@media screen And (max-width: 768px) {
+    .heading::before {
+        top: 23px;
+        left: 78px;
+    }
+    
+    .heading2a {
+        top: 0;
+        left: 109px;
+    }
+
+    .heading3::before {
+        top: 0px;
+        left: 121px;
+    }
+}
