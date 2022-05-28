@@ -1,7 +1,8 @@
-import Glow from '../../utils/glow/Glow';
-import styles from './IndvQuestion.module.css'
+import Glow from "../../utils/glow/Glow";
+import styles from "./IndvQuestion.module.css";
 import BG from "../../../public/images/bg.jpg";
-import Image from 'next/image';
+import Image from "next/image";
+import Button from "../../utils/button/Button";
 
 function IndvQuestion({
   outlineDirection = "r",
@@ -14,19 +15,14 @@ function IndvQuestion({
   return (
     <section className={styles.container}>
       <div className={`${styles.top} ${styles[outlineDirection]}`}>
-        <Glow text={text}  fz={fz} />
+        <Glow text={text} fz={fz} />
       </div>
       <div className={`${styles.content} ${styles[rr]}`}>
         <div className={styles.left}>
-          <h2 className={styles.heading}>{heading}</h2>
-          
-          <p className={styles.copy} lang='en'>
-            Lorem Khaled Ipsum is a major key to success. We the best. Lion! The
-            first of the month is coming, we have to get money, we have no Lorem
-            Khaled Ipsum is a major key to success. We the best. Lion! The first
-            of the month is coming, we have to get money, we have no choice.
-            choice.
-          </p>
+          <h2 className={styles.question}>{heading}</h2>
+          <div className={styles.btnContainer}>
+            <Button text='Get Answer' />
+          </div>
         </div>
         <div className={styles.right}>
           <div className={styles.imgContainer}>
@@ -38,4 +34,4 @@ function IndvQuestion({
   );
 }
 
-export default IndvQuestion
+export default IndvQuestion;

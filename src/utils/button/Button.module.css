@@ -1,0 +1,119 @@
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: "Lato";
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 13px 65px;
+    border-radius: 50px;
+    z-index: 5;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.primary {
+     background-color: transparent;
+     border: solid 2px var(--accent4);
+     color: var(--accent4);
+     position: relative;
+ }
+
+ .blue {
+    background-color: var(--accent7);
+    border: solid 2px var(--accent7);
+    color: var(--accent4);
+    position: relative;
+ }
+
+ .blueOutline {
+    background-color: var(--accent4);
+    border: solid 2px var(--accent7);
+    color: var(--accent7);
+    position: relative;
+ }
+
+ .blueOutline:hover {
+    background-color: var(--accent7);
+    color: var(--accent4);
+}
+
+ .primaryOutline2 {
+     background-color: transparent;
+     border: 2px solid var(--accent4);
+     color: var(--accent4);
+ }
+
+ .tertiary {
+     background-color: var(--accent2);
+     color: var(--accent1);
+     border: solid 2px var(--accent2);
+ }
+
+ .tertiaryOutline {
+     background-color: transparent;
+     color: var(--accent2);
+     border: solid 2px var(--accent2);
+ }
+
+ @media screen and (min-width: 481px) {
+
+     .primary:hover {
+         background-color: var(--accent4);
+         border: 2px solid var(--accent4);
+         color: var(--accent1);
+         transition: all 0.2s ease-in-out;
+     }
+
+     .primaryOutline2:hover {
+         background-color: var(--accent4);
+         border: 2px solid var(--accent4);
+         color: var(--accent1);
+         transition: all 0.3s ease-in-out;
+     }
+
+     .tertiary:hover {
+         background-color: var(--accent4);
+         border: 2px solid var(--accent1);
+         color: var(--accent1);
+         transition: all 0.3s ease-in-out;
+     }
+
+     .blue:hover {
+         background-color: var(--accent4);
+         border: 2px solid var(--accent7);
+         color: var(--accent7);
+     }
+ }
+
+ @media screen and (max-width: 768px) {
+     .btn {
+     font-size: 1.85rem;
+    }
+ }
+
+ @media screen and (max-width: 630px) {
+    .container {
+        width: 100%;
+    } 
+    
+    .primary:active {
+        background-color: var(--accent4);
+        color: var(--accent3);
+    }
+
+    .primaryOutline2:active {
+        background-color: var(--accent3);
+        color: var(--accent4);
+    }
+ }
+
+ 

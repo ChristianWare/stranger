@@ -41,7 +41,7 @@
     padding-left: 2rem;
 }
 
-.heading {
+.question {
     font-family: "Lato";
     text-transform: uppercase;
     position: relative;
@@ -49,10 +49,8 @@
     margin-bottom: 3rem;
 }
 
-
-.copy {
-    hyphens: auto;
-    color: var(--accent3);
+.btnContainer {
+    display: flex;
 }
 
 .right {
@@ -92,9 +90,5 @@
     .content {
         padding: 1rem;
         padding-top: 5rem;
-    }
-
-    .copy {
-        text-align: justify;
     }
 }
