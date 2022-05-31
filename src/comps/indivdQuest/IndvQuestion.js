@@ -10,7 +10,6 @@ function IndvQuestion({
   fz,
   rr = "no",
   heading,
-  price,
 }) {
   return (
     <section className={styles.container}>
@@ -20,9 +19,9 @@ function IndvQuestion({
       <div className={`${styles.content} ${styles[rr]}`}>
         <div className={styles.left}>
           <h2 className={styles.question}>{heading}</h2>
-          <div className={styles.btnContainer}>
-            <Button text='Get Answer' />
-          </div>
+          <h3 className={styles.click}>
+            Click <span className={styles.tri}>▽</span> to find out....
+          </h3>
         </div>
         <div className={styles.right}>
           <div className={styles.imgContainer}>
