@@ -2,7 +2,7 @@ import Glow from "../../utils/glow/Glow";
 import styles from "./IndvQuestion.module.css";
 import BG from "../../../public/images/bg.jpg";
 import Image from "next/image";
-import Button from "../../utils/button/Button";
+import Ball from '../../utils/8ball/Ball'
 
 function IndvQuestion({
   outlineDirection = "r",
@@ -25,7 +25,8 @@ function IndvQuestion({
         </div>
         <div className={styles.right}>
           <div className={styles.imgContainer}>
-            <Image src={BG} width={400} height={400} />
+            {/* <Image src={BG} width={400} height={400} /> */}
+            <Ball />
           </div>
         </div>
       </div>
