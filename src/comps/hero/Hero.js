@@ -17,7 +17,7 @@ function Hero() {
           </div>
           <h3 className={styles.heading3}>8 ball</h3>
         </div>
-        <Glow text='⌵' animation='animation' fz='large' />
+        <Glow text='▼' animation='animation' fz='tri' color='blue' />
       </div>
     </section>
   );

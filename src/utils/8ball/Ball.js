@@ -5,9 +5,8 @@ function Ball() {
   return (
     <>
       <div className={styles.label}>
-        {/* <div className={styles.triangle}></div> */}
         <div className={styles.glowBox}>
-          <Glow text='▲' fz='tri' color='blue' />
+          <Glow text='▼' fz='tri' color='blue' />
         </div>
       </div>
     </>

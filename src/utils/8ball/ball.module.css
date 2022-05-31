@@ -26,21 +26,10 @@
 	box-shadow: inset 2px 2px 6px black;
 }
 
-.triangle {
-	position: absolute;
-	top: 105px;
-	left: 105px;
-	text-align: center;
-	z-index: 1;
-	border-left: 70px solid transparent;
-	border-right: 70px solid transparent;
-	border-bottom: 105px solid #4458cb;	
-}
-
 .glowBox {
 	z-index: 1;
 	position: absolute;
-	top: 50px;
+	top: 85px;
 	left: 100px;
 }
 
