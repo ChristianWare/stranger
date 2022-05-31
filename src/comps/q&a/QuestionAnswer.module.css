@@ -3,16 +3,21 @@
     height: 100vh;
 }
 
-.circle {
-            border: 1px solid black;
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
 }
 
-.button {
-    color:white;
+.input {
+    width: 200%;
+    padding: 1rem;
+    outline: none;
+}
+
+.buttonContainer {
+    display: flex;
+    margin-top: 5rem;
 }

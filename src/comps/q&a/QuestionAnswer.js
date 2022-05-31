@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Glow from "../../utils/glow/Glow";
 import styles from "./QuestionAnswer.module.css";
+import Button from "../../utils/button/Button";
 
 const answers = [
   "Signs point to yes",
@@ -8,7 +9,7 @@ const answers = [
   "My sources say no",
   "Signs point to yes",
   "Signs point to yes",
-  "Better not tell you now",
+  "Who Knows?",
   "Ask again later",
   "It is certain!",
   "My sources say no",
@@ -30,22 +31,25 @@ function QuestionAnswer() {
 
   return (
     <section className={styles.container}>
-      <Glow text='Ask your own questions:' fz='tiny' />
-      <form onSubmit={getAnswer}>
-        <div>
-          <label htmlFor=''></label>
-          <input
-            type='text'
-            value={question}
-            onChange={(e) => setQuestion(e.target.value)}
-          />
-          <button type='submit' className={styles.button}>
-            Get Answer
-          </button>
+      <div className={styles.content}>
+        <h2>MORE QUESTIONS? TYPE THEM HERE....</h2>
+        <form onSubmit={getAnswer}>
+          <div>
+            <label htmlFor=''></label>
+            <input
+              type='text'
+              value={question}
+              onChange={(e) => setQuestion(e.target.value)}
+              className={styles.input}
+            />
+            <div className={styles.buttonContainer}>
+              <Button type='submit' text='get answer' />
+            </div>
+          </div>
+        </form>
+        <div className={styles.answerBox}>
+          <Glow text={answer} fz='tiny' color='blue' />
         </div>
-      </form>
-      <div className='circle'>
-        <p>{answer}</p>
       </div>
     </section>
   );
