@@ -1,0 +1,150 @@
+.container {
+    height: 100vh;
+}
+
+.content {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.line::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 20px;
+    left: 0;
+    border: 2px solid var(--accent6);
+    mix-blend-mode: difference;
+    filter:blur(1px);
+}
+
+.headingContainer {
+    display: block;
+    position: relative;
+}
+
+.heading, .heading2, .heading2a, .s, .r, .heading3  {
+    font-family: "Benguiat";
+    font-size: 10rem;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    hyphens: auto;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--accent6);
+    position: relative;
+    line-height: 1;
+    letter-spacing: -10px; 
+}
+
+.s  {
+    font-size: 13rem;
+    position: relative;
+    top: 20px;
+}
+
+.s::after  {
+    content: 'S';
+    position: absolute;
+    mix-blend-mode: difference;
+    filter:blur(3px);
+    top: 21px;
+    left: 0px;
+}
+
+.r  {
+    font-size: 13rem;
+    position: relative;
+    top: 20px;
+}
+
+.r::after  {
+    content: 'R';
+    position: absolute;
+    mix-blend-mode: difference;
+    filter:blur(3px);
+    top: 21px;
+    left: 0px;
+}
+
+.heading::before {
+    content: 'TRANGE';
+    position: absolute;
+    mix-blend-mode: difference;
+    filter:blur(3px);
+    top: 27px;
+    left: 90px;
+}
+
+.thingsContainer {
+    position: relative;
+}
+
+ .heading2a {
+    position: absolute;
+    top: 0;
+    left: 125px;
+    position: absolute;
+    mix-blend-mode: difference;
+    filter:blur(3px);
+}
+
+.heading2::before {
+    content: '';
+    position: absolute;
+    width: 15%;
+    height: 5px;
+    top: 20px;
+    left: 0;
+    border: 2px solid var(--accent6);
+    mix-blend-mode: difference;
+    filter:blur(1px);
+}
+
+.heading2::after {
+    content: '';
+    position: absolute;
+    width: 16.5%;
+    height: 5px;
+    top: 20px;
+    right: -8px;
+    border: 2px solid var(--accent6);
+    mix-blend-mode: difference;
+    filter:blur(1px);
+}
+
+.heading3::before {
+    content: '8 Ball';
+    position: absolute;
+    top: 0px;
+    left: 140px;
+    mix-blend-mode: difference;
+    filter:blur(3px);
+}
+
+@media screen And (max-width: 768px) {
+    .heading::before {
+        top: 23px;
+        left: 78px;
+    }
+    
+    .heading2a {
+        top: 0;
+        left: 109px;
+    }
+
+    .heading3::before {
+        top: 0px;
+        left: 121px;
+    }
+}
