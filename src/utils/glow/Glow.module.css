@@ -4,13 +4,16 @@
 
 .item1, .item2  {
     text-transform: uppercase;
-    text-align: center;
     color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--accent6);
-    line-height: .8;
+    line-height: 1.5;
     position: relative;
     font-family: "Benguiat";
+}
+
+.blue {
+    -webkit-text-stroke-color: var(--accent2);
 }
 
 .animation {
@@ -25,8 +28,16 @@
     font-size: 13rem;
 }
 
+.tri {
+    font-size: 15rem;
+}
+
 .small {
     font-size: 10rem;
+}
+
+.tiny {
+    font-size: 7rem;
 }
 
 .item2 {

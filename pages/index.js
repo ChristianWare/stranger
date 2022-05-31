@@ -1,6 +1,7 @@
 import Hero from '../src/comps/hero/Hero'
 import IndvQuestion from '../src/comps/indivdQuest/IndvQuestion'
 import Layout from '../src/comps/layout/Layout'
+import QuestionAnswer from '../src/comps/q&a/QuestionAnswer';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -38,6 +39,7 @@ export default function Home() {
           outlineDirection='l'
           rr='yes'
         />
+        <QuestionAnswer />
       </Layout>
     </>
   );

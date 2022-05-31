@@ -1,0 +1,58 @@
+.label {
+    display: block;
+	margin: 40px;
+	padding: 0;
+	height: 350px;
+	width: 350px;
+	background: radial-gradient(circle at 270px 100px, #555555, #000000);
+	border-radius: 50%;
+	position: relative;
+	cursor: pointer;
+}
+
+.label::before {
+	content: '';
+	display: block;
+	width: 170px;
+	height: 170px;
+	background: #333;
+	border-radius: 50%;
+	margin: -85px 0 0 -85px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	border: 1px solid #666;
+	box-shadow: inset 2px 2px 6px black;
+}
+
+.triangle {
+	position: absolute;
+	top: 105px;
+	left: 105px;
+	text-align: center;
+	z-index: 1;
+	border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+	border-bottom: 105px solid #4458cb;	
+}
+
+.glowBox {
+	z-index: 1;
+	position: absolute;
+	top: 50px;
+	left: 100px;
+}
+
+@keyframes shake {
+  10%, 90% { transform: translate3d(-10px, 0, 0); }
+  20%, 80% { transform: translate3d(10px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-10px, 0, 0); }
+  40%, 60% { transform: translate3d(10px, 0, 0); }
+}
+@keyframes shake2 {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}

@@ -20,7 +20,8 @@ function IndvQuestion({
         <div className={styles.left}>
           <h2 className={styles.question}>{heading}</h2>
           <h3 className={styles.click}>
-            Click <span className={styles.tri}>▽</span> to find out....
+            <Glow text='Click ball to find out....' fz='tiny' />
+            {/* Click <span className={styles.tri}>▽</span> to find out.... */}
           </h3>
         </div>
         <div className={styles.right}>
