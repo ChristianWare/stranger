@@ -10,33 +10,23 @@ export default function Home() {
       <Layout>
         <Hero />
         <IndvQuestion
-          text='1.'
           fz='medium'
           heading='Will Eleven get her powers back?'
-          price='100'
         />
         <IndvQuestion
-          text='2.'
           fz='medium'
           heading='Will Season 4 air this year?'
-          price='200'
           direction='reverse'
-          outlineDirection='l'
           rr='yes'
         />
         <IndvQuestion
-          text='3.'
           fz='medium'
           heading='Will Hopper be eaten by a demogorgon?'
-          price='100'
         />
         <IndvQuestion
-          text='4.'
           fz='medium'
           heading='Will Dustin ever top Max in Dig Dug?'
-          price='200'
           direction='reverse'
-          outlineDirection='l'
           rr='yes'
         />
         <QuestionAnswer />
